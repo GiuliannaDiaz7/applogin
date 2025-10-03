@@ -67,18 +67,18 @@
             android:id="@+id/tvCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="correo@ejemplo.com"
+            android:text="estudiante@st.cl"
             android:textSize="16sp"
             android:textColor="@color/text_dim"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"/>
 
-        <!-- Contraseña (solo demostración, normalmente no se muestra en apps reales) -->
+        <!-- Contraseña -->
         <TextView
             android:id="@+id/tvPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="********"
+            android:text="123456"
             android:textSize="16sp"
             android:textColor="@color/text_dim"
             android:paddingTop="8dp"

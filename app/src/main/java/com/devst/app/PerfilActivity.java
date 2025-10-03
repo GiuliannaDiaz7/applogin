@@ -37,7 +37,7 @@ public class PerfilActivity extends AppCompatActivity {
 
         // Botón Acerca de -> abre GitHub
         btnAcercaDe.setOnClickListener(v -> {
-            Uri github = Uri.parse("https://github.com/TU_USUARIO");
+            Uri github = Uri.parse("https://github.com/GiuliannaDiaz7");
             Intent intent = new Intent(Intent.ACTION_VIEW, github);
             startActivity(intent);
         });
