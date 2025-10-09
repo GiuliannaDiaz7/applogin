@@ -84,7 +84,42 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Utilizar Camara"/>
+                    android:text="Utilizar Camara"/>}
+
+                <Button
+                    android:id="@+id/btnMaps"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abrir en Maps"/>
+
+                <Button
+                    android:id="@+id/btnmensaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Enviar SMS" />
+                <Button
+                    android:id="@+id/btnLlamar"
+                    android:text="Abrir Marcador"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnGaleria"
+                    android:text="Seleccionar Imagen de Galería"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnWifi"
+                    android:text="Abrir Configuración Wi-Fi"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_height="wrap_content" />
+
 
             </LinearLayout>
         </LinearLayout>

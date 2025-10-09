@@ -68,6 +68,10 @@ public class HomeActivity extends AppCompatActivity {
         Button btnCompartir = findViewById(R.id.btnCompartir);
         Button btnLinterna = findViewById(R.id.btnLinterna);
         Button btnCamara = findViewById(R.id.btnCamara);
+        Button btnMaps = findViewById(R.id.btnMaps);
+        Button btnLlamar = findViewById(R.id.btnLlamar);
+        Button btnGaleria = findViewById(R.id.btnGaleria);
+        Button btnWifi = findViewById(R.id.btnWifi);
 
         btnIrPerfil.setOnClickListener(v -> {
             Intent perfil = new Intent(HomeActivity.this, PerfilActivity.class);
@@ -102,6 +106,31 @@ public class HomeActivity extends AppCompatActivity {
         btnCamara.setOnClickListener(v ->
                 startActivity(new Intent(this, CamaraActivity.class))
         );
+        btnMaps.setOnClickListener(v -> {
+            Uri ubicacion = Uri.parse("geo:-33.0472,-71.6127");
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, ubicacion);
+            startActivity(mapIntent);
+        });
+
+
+        btnLlamar.setOnClickListener(v -> {
+            Uri telefono = Uri.parse("tel:+56992034061");
+            Intent dialIntent = new Intent(Intent.ACTION_DIAL, telefono);
+            startActivity(dialIntent);
+        });
+
+
+        btnGaleria.setOnClickListener(v -> {
+            Intent galeria = new Intent(Intent.ACTION_GET_CONTENT);
+            galeria.setType("image/*");
+            startActivity(Intent.createChooser(galeria, "Selecciona una imagen"));
+        });
+
+
+        btnWifi.setOnClickListener(v -> {
+            Intent wifiSettings = new Intent(android.provider.Settings.ACTION_WIFI_SETTINGS);
+            startActivity(wifiSettings);
+        });
 
         camara = (CameraManager) getSystemService(CAMERA_SERVICE);
         try {
