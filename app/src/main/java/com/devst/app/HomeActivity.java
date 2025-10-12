@@ -27,7 +27,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-
+//probando
 public class HomeActivity extends AppCompatActivity {
 
     // Variables

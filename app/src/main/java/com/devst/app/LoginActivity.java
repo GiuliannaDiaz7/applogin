@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     //Creamos variables
     private EditText edtEmail, edtPass;
     private Button btnLogin;
-
+    //probando
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
