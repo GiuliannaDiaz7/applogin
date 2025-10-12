@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <!-- Barra superior -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/brand_primary"
+            android:title="Menú Principal"
+            android:titleTextColor="@android:color/white"
+            app:titleCentered="true"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Contenido desplazable -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Texto de bienvenida -->
+            <TextView
+                android:id="@+id/tvBienvenida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/text_main"
+                android:gravity="center"/>
+
+            <!-- Contenedor tipo grid -->
+            <GridLayout
+                android:id="@+id/gridButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:alignmentMode="alignMargins"
+                android:rowOrderPreserved="false"
+                android:columnOrderPreserved="false"
+                android:useDefaultMargins="true">
+
+                <!-- Botones fila 1 -->
+                <Button
+                    android:id="@+id/btnIrPerfil"
+                    android:text="Ir a Perfil"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"/>
+
+                <Button
+                    android:id="@+id/btnAbrirWeb"
+                    android:text="Abrir Web"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"/>
+
+                <!-- Fila 2 -->
+                <Button
+                    android:id="@+id/btnEnviarCorreo"
+                    android:text="Correo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"/>
+
+                <Button
+                    android:id="@+id/btnCompartir"
+                    android:text="Compartir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"/>
+
+                <!-- Fila 3 -->
+                <Button
+                    android:id="@+id/btnLinterna"
+                    android:text="Linterna"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"/>
+
+                <Button
+                    android:id="@+id/btnCamara"
+                    android:text="Cámara"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"/>
+
+                <!-- Fila 4 -->
+                <Button
+                    android:id="@+id/btnMaps"
+                    android:text="Maps"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"/>
+
+                <Button
+                    android:id="@+id/btnmensaje"
+                    android:text="SMS"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"/>
+
+                <!-- Fila 5 -->
+                <Button
+                    android:id="@+id/btnLlamar"
+                    android:text="Llamar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"/>
+
+                <Button
+                    android:id="@+id/btnGaleria"
+                    android:text="Galería"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"/>
+
+                <!-- Fila 6 -->
+                <Button
+                    android:id="@+id/btnWifi"
+                    android:text="Wi-Fi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"/>
+
+                <Button
+                    android:id="@+id/btnAyuda"
+                    android:text="Ayuda"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"/>
+
+                <!-- Fila 7 -->
+                <Button
+                    android:id="@+id/btnDetalle"
+                    android:text="Detalle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"/>
+
+                <Button
+                    android:id="@+id/btnConfig"
+                    android:text="Configuración"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"/>
+
+            </GridLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

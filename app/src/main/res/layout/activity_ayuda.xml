@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guía de uso de la aplicación"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:paddingBottom="12dp" />
+
+        <!-- Descripción general -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Esta aplicación permite realizar diferentes acciones mediante botones simples. A continuación, encontrarás una breve explicación de cada una de ellas."
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="24dp" />
+
+        <!-- Sección: Abrir sitio web -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌐  Abrir sitio web"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abre una página web específica usando el navegador del dispositivo. Ideal para acceder a sitios institucionales o tutoriales."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Sección: Enviar correo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📧  Enviar correo electrónico"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Permite redactar un correo con asunto y mensaje predefinido, utilizando la aplicación de correo instalada en el dispositivo."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Sección: Compartir texto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔗  Compartir texto"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abre el menú de compartir para enviar texto a través de distintas aplicaciones, como WhatsApp, Telegram o redes sociales."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Sección: Linterna -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡  Linterna (encender/apagar)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activa o desactiva la linterna del dispositivo. Es útil en situaciones de poca luz o emergencia."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Sección: Abrir cámara -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📷  Abrir cámara"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abre la aplicación de cámara del sistema para tomar una fotografía. Luego, la imagen puede guardarse o mostrarse dentro de la app."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Sección: Abrir mapa -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗺️  Abrir mapa"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Muestra una ubicación o dirección específica en Google Maps. Permite al usuario ver rutas y ubicaciones."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Sección: Enviar SMS -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✉️  Enviar SMS"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abre la aplicación de mensajes con un texto predefinido, listo para ser enviado a un contacto específico."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Sección: Abrir marcador telefónico -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📞  Abrir marcador telefónico"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abre la pantalla del teléfono con un número ya cargado, lista para realizar una llamada."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Sección: Seleccionar imagen -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🖼️  Seleccionar imagen de la galería"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Permite elegir una imagen almacenada en la galería del dispositivo y mostrarla dentro de la app."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Sección: Configuración Wi-Fi -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📶  Abrir configuración Wi-Fi"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abre directamente los ajustes del sistema relacionados con la red Wi-Fi para conectarse o cambiar de red."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Sección: Ayuda -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ℹ️  Ayuda"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Muestra esta pantalla con la guía de uso de todas las funciones disponibles en la aplicación."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Sección: Detalle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗂️  Detalle"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abre una pantalla que muestra información detallada o simulada sobre un elemento o usuario."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Sección: Configuración -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚙️  Configuración"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Permite acceder a la pantalla de ajustes de la aplicación, donde se puede cambiar la configuración interna."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="32dp" />
+
+        <!-- Versión -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Versión de la aplicación: 1.0.0"
+            android:textSize="14sp"
+            android:textColor="#777777"
+            android:gravity="center"
+            android:paddingTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
